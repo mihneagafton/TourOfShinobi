@@ -1,0 +1,1 @@
+Link to where i left: https://angular.io/tutorial/toh-pt5

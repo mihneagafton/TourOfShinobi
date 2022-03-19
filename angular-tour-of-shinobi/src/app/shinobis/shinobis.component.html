@@ -1,0 +1,9 @@
+<h2>My Shinobis</h2>
+<ul class="shinobis">
+    <li *ngFor="let shinobi of shinobis">
+        <button [class.selected]="shinobi === selectedShinobi" type="button" (click)="onSelect(shinobi)"></button>
+        <span class="badge">{{shinobi.id}}</span> 
+        <span class="name">{{shinobi.name}}</span>
+    </li>
+</ul>
+<app-shinobi-detail [shinobi]="selectedShinobi"></app-shinobi-detail>
